@@ -7,7 +7,7 @@ This project is an **interactive Rock Paper Scissors game** that allows users to
 ## Live Demo
 
 You can view the live version of the project here:  
-**[Live Demo Link](#)**  
+**[Live Demo Link](https://shorookkhaled559.github.io/Rock-Paper-Scissor-Game/)**  
 
 ------------------------------------------------------------------------
 
