@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissor Game</title>
+    <!--Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="h-screen bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-500 flex items-center justify-center font-poppins"
+  >
+    <div class="container bg-white p-10 rounded-xl shadow-lg w-11/12 max-w-lg">
+      <!-- Scores -->
+      <div class="scores mb-12 text-right text-base">
+        <p>
+          Computer: <span id="computer_score" class="font-semibold">0</span>
+        </p>
+        <p>You: <span id="user_score" class="font-semibold">0</span></p>
+      </div>
+
+      <!-- Weapons Buttons -->
+      <div class="weapons flex justify-around mb-10">
+        <button
+          onclick="checker('rock')"
+          class="bg-yellow-400 w-24 h-24 rounded-full text-5xl flex items-center justify-center shadow-md hover:scale-110 transition-transform"
+        >
+          <i class="far fa-hand-rock"></i>
+        </button>
+        <button
+          onclick="checker('paper')"
+          class="bg-yellow-400 w-24 h-24 rounded-full text-5xl flex items-center justify-center shadow-md hover:scale-110 transition-transform"
+        >
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button
+          onclick="checker('scissor')"
+          class="bg-yellow-400 w-24 h-24 rounded-full text-5xl flex items-center justify-center shadow-md hover:scale-110 transition-transform"
+        >
+          <i class="far fa-hand-scissors"></i>
+        </button>
+      </div>
+
+      <!-- Details / Choices -->
+      <div class="details text-center">
+        <!-- User -->
+        <div class="user-area mb-6">
+          <p id="user_choice" class="mb-2 font-normal"></p>
+          <div
+            id="user_icon"
+            class="choice-icon hidden bg-yellow-400 w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-md mx-auto mb-4"
+          ></div>
+        </div>
+        <!-- Computer -->
+        <div class="comp-area mb-6">
+          <p id="comp_choice" class="mb-2 font-normal"></p>
+          <div
+            id="comp_icon"
+            class="choice-icon hidden bg-yellow-400 w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-md mx-auto mb-4"
+          ></div>
+        </div>
+        <!-- Result -->
+        <p
+          id="result"
+          class="w-44 py-2 mx-auto font-semibold tracking-wide"
+        ></p>
+      </div>
+    </div>
+
+    <!--Script-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
